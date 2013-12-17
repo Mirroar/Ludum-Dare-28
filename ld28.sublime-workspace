@@ -1,0 +1,1993 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"li",
+				"lightRadius"
+			],
+			[
+				"play",
+				"playerName"
+			],
+			[
+				"persi",
+				"persistent"
+			],
+			[
+				"targ",
+				"targetY"
+			],
+			[
+				"des",
+				"destroyed"
+			],
+			[
+				"tar",
+				"targetY"
+			],
+			[
+				"Des",
+				"DestroyTile"
+			],
+			[
+				"tile",
+				"tileType"
+			],
+			[
+				"goal",
+				"goalZoom"
+			],
+			[
+				"target",
+				"targetX"
+			],
+			[
+				"x",
+				"xOffset"
+			],
+			[
+				"poi",
+				"points"
+			],
+			[
+				"cal",
+				"calculateScore"
+			],
+			[
+				"GetT",
+				"GetTile"
+			],
+			[
+				"dur",
+				"durability"
+			],
+			[
+				"par",
+				"particles"
+			],
+			[
+				"drill",
+				"drillDurability"
+			],
+			[
+				"dura",
+				"durabilityDrain"
+			],
+			[
+				"dr",
+				"drillDurability"
+			],
+			[
+				"ach",
+				"achievementMap"
+			],
+			[
+				"high",
+				"highscorePositionTarget"
+			],
+			[
+				"achie",
+				"achievementMap"
+			],
+			[
+				"hi",
+				"highscorePositionTarget"
+			],
+			[
+				"power",
+				"powerup"
+			],
+			[
+				"Play",
+				"PlaySound"
+			],
+			[
+				"setc",
+				"setColor"
+			],
+			[
+				"pers",
+				"persistent"
+			],
+			[
+				"per",
+				"persistentTemp"
+			],
+			[
+				"til",
+				"tileType"
+			],
+			[
+				"ke",
+				"key"
+			],
+			[
+				"key",
+				"keyboard"
+			],
+			[
+				"hig",
+				"highscorePositionTarget"
+			],
+			[
+				"temp",
+				"tempName"
+			],
+			[
+				"ite",
+				"items"
+			],
+			[
+				"ani",
+				"animationDirections"
+			],
+			[
+				"off",
+				"offsetDir"
+			],
+			[
+				"offse",
+				"offsetX"
+			],
+			[
+				"an",
+				"animTime"
+			],
+			[
+				"anim",
+				"animation"
+			],
+			[
+				"rand",
+				"randomRadius"
+			],
+			[
+				"else",
+				"elseif"
+			],
+			[
+				"hel",
+				"helmet"
+			],
+			[
+				"get",
+				"GetWidth"
+			],
+			[
+				"point",
+				"pointsMap"
+			],
+			[
+				"mess",
+				"messageMap"
+			],
+			[
+				"Lo",
+				"LoadHighscores"
+			],
+			[
+				"game",
+				"gameover"
+			],
+			[
+				"ran",
+				"randomRadius"
+			],
+			[
+				"cur",
+				"currentX"
+			],
+			[
+				"_Get",
+				"_GetSizeRecursive"
+			],
+			[
+				"dim",
+				"dimension"
+			],
+			[
+				"blo",
+				"blockCount"
+			],
+			[
+				"link_",
+				"link_href"
+			],
+			[
+				"audience_s",
+				"audiences_specific"
+			],
+			[
+				"extra",
+				"extra_other_description"
+			],
+			[
+				"keyw",
+				"keyword"
+			],
+			[
+				"json",
+				"json_row"
+			],
+			[
+				"media_",
+				"media_other_description"
+			],
+			[
+				"media",
+				"media_types_map"
+			],
+			[
+				"chil",
+				"child"
+			],
+			[
+				"ch",
+				"children"
+			],
+			[
+				"Mail",
+				"MailSageDB"
+			],
+			[
+				"si",
+				"sizeY"
+			],
+			[
+				"Ri",
+				"RiverCliff"
+			],
+			[
+				"sie",
+				"sizeX"
+			],
+			[
+				"_G",
+				"_GetTileCoordinatesRecursive"
+			],
+			[
+				"clou",
+				"cloudLevels"
+			],
+			[
+				"cl",
+				"cloudLevels"
+			],
+			[
+				"SetT",
+				"SetType"
+			],
+			[
+				"clo",
+				"cloudLevels"
+			],
+			[
+				"Lin",
+				"LinearSample"
+			],
+			[
+				"Mou",
+				"Mountain"
+			],
+			[
+				"Moun",
+				"MountainGrass"
+			],
+			[
+				"size",
+				"sizeX"
+			],
+			[
+				"cu",
+				"currentX"
+			],
+			[
+				"ti",
+				"tileType"
+			],
+			[
+				"curren",
+				"currentX"
+			],
+			[
+				"topd",
+				"topDown"
+			],
+			[
+				"topdo",
+				"topDownTextures"
+			],
+			[
+				"Topf",
+				"TopFitWeightsPluginSpecDropdown"
+			],
+			[
+				"ass",
+				"associatedSpec"
+			],
+			[
+				"glo",
+				"globalID"
+			],
+			[
+				"spe",
+				"specID"
+			],
+			[
+				"spec",
+				"specID"
+			],
+			[
+				"tota",
+				"totalBonus"
+			],
+			[
+				"seco",
+				"secondaryStats"
+			],
+			[
+				"perce",
+				"percentBonus"
+			],
+			[
+				"lan",
+				"lang"
+			],
+			[
+				"im",
+				"image-only"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"cot",
+				"content"
+			],
+			[
+				"icon",
+				"icons-sprite"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"dot",
+				"dotted-color"
+			],
+			[
+				"edit-",
+				"edit-keys-wrapper"
+			],
+			[
+				"dist",
+				"distanceWrapper"
+			],
+			[
+				"dis",
+				"distanceWrapper"
+			],
+			[
+				"rem",
+				"remove_node"
+			],
+			[
+				"feature",
+				"feature-icons-sprite"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"con",
+				"conference_rooms_table"
+			],
+			[
+				"titl",
+				"title_field"
+			],
+			[
+				"field_",
+				"field_collection_item"
+			],
+			[
+				"ro",
+				"room_entity"
+			],
+			[
+				"view",
+				"view_mode"
+			],
+			[
+				"tbo",
+				"tbody_start"
+			],
+			[
+				"su",
+				"subject"
+			],
+			[
+				"Tag",
+				"Tagungsraeume"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"ob_fl",
+				"ob_end_flush"
+			],
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"GRE",
+				"GRENZE2"
+			],
+			[
+				"GR",
+				"GRENZE2"
+			],
+			[
+				"dete",
+				"determineNextAction"
+			],
+			[
+				"preve",
+				"prevent-list-styles"
+			],
+			[
+				"decode",
+				"decodePlus"
+			],
+			[
+				"grou",
+				"group_size"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"defaul",
+				"defaultValue"
+			],
+			[
+				"lang",
+				"language"
+			],
+			[
+				"set",
+				"settings"
+			],
+			[
+				"get_define",
+				"get_defined_vars"
+			],
+			[
+				"reg",
+				"region_items"
+			],
+			[
+				"re",
+				"region_items"
+			],
+			[
+				"vide",
+				"videos"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Ideas",
+			"settings":
+			{
+				"buffer_size": 564,
+				"line_ending": "Windows",
+				"name": "Ideas"
+			}
+		},
+		{
+			"file": "main.lua",
+			"settings":
+			{
+				"buffer_size": 35888,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/menu.lua",
+			"settings":
+			{
+				"buffer_size": 1489,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/game.lua",
+			"settings":
+			{
+				"buffer_size": 3767,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/log.lua",
+			"settings":
+			{
+				"buffer_size": 947,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/player.lua",
+			"settings":
+			{
+				"buffer_size": 3158,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/tile.lua",
+			"settings":
+			{
+				"buffer_size": 1131,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "classes/map.lua",
+			"settings":
+			{
+				"buffer_size": 5751,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/love.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 289.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/David/Desktop/Ludum Dare/Code/dist/mac/daretodig.app/Contents/Info.plist",
+		"/C/Users/David/Desktop/Ludum Dare/Code/dist/mac/miner-compo.app/Contents/Info.plist",
+		"/C/Users/David/Desktop/Ludum Dare/Code/classes/particle.lua",
+		"/C/Users/David/Desktop/Ludum Dare/Code/classes/textureatlas.lua",
+		"/C/Users/David/AppData/Roaming/LOVE/Code/persistent.lua",
+		"/C/Users/David/Desktop/Ludum Dare/Code/lib/tserial.lua",
+		"/C/Users/David/Desktop/Ludum Dare/Code/classes/map.lua",
+		"/C/Users/David/Desktop/Ludum Dare/Code/dist/mac/miner-1.app/Contents/Info.plist",
+		"/C/Users/David/Desktop/Ludum Dare/Code/dist/license.txt",
+		"/C/Users/David/Desktop/Ludum Dare/Code/classes/tile.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/1gam/2013-08/2013-08.sublime-project",
+		"/C/Users/David/Desktop/Ludum Dare/Code/ld28.sublime-project",
+		"/C/Users/David/Desktop/Ludum Dare/TODO.txt",
+		"/C/Users/David/Dropbox/Ideen/lua Tutorials.txt",
+		"/C/Users/David/Desktop/Ludum Dare/Timelapse/chronolapse.annotate",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/files/Meldungen.xml",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/sidebar.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/sidebar-links.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/w21_vzbv_migrate.info",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/w21_vzbv_migrate.migrate.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/files/Verbraucherthemen.xml",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/meldungen.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_block_overrides/w21_block_overrides.module",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_block_overrides/w21_block_overrides.admin.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/contrib/bean/bean.install",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/bean.migrate.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/contrib/migrate_extras/entity_api.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/files/Materialien.xml",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/materialien.inc",
+		"/C/Users/David/AppData/Local/Temp/1292669d-7b15-4cc8-9a9f-2b42d44f3558/srv/www/htdocs/verbraucherbildung.werk21system.de/html/sites/all/modules/custom/w21_vzbv_migrate/files/Materialien.json",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/inventory.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/TopFit.toc",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/Libs/LibItemUpgradeInfo-1.0/Core.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/SyLevel/Libs/LibItemUpgradeInfo-1.0/Core.lua",
+		"/D/Backup/porn/Games/JSK Studio 2013-02-18-2/JSK Studio/Defeated!Devil girl/お読みください.txt",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/core.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/Libs/LibItemUpgradeInfo-1.0/LibItemUpgradeInfo-1.0.toc",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/patched/_patched_lexicon/lexicon.pages.inc",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/contrib/lexicon/lexicon.pages.inc",
+		"/C/Users/David/AppData/Local/Temp/e34af9d5-5ca3-49c0-865f-e2553b8cefd0/srv/www/htdocs/www.visitberlin.de/html/sites/all/modules/btm_blocks/btm_blocks.relaunch.inc",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/contrib/lexicon/lexicon.module",
+		"/C/Users/David/AppData/Local/Temp/e34af9d5-5ca3-49c0-865f-e2553b8cefd0/srv/www/htdocs/www.visitberlin.de/html/sites/all/themes/relaunch/btm_relaunch/templates/page.tpl.php",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/classes/ui/interfaceelement.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/MailSage/MailSage.toc",
+		"/C/Spiele/World of Warcraft/Interface/addons/MailSage/core.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/classes/map.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/classes/ui/frame.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/modules/topdown.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/classes/tiledtextureatlas.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/modules/linear.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/main.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/classes/tile.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/modules/isometric.lua",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/images/tilemap.txt",
+		"/C/Users/David/Dropbox/Projekte/Löve/ldlib/classes/textureatlas.lua",
+		"/C/Users/David/AppData/Roaming/Sublime Text 2/Packages/User/love.sublime-build",
+		"/D/Backup/porn/Games/# [JSK工房] RG12507/Game Descriptions.txt",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/locale/enUS.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/set.class.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/modules/weightsplugin.class.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/modules/ui.character.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/modules/ui.config.lua",
+		"/C/Users/David/Dropbox/Uni/Einführung OOP/Aufgaben 3/parameter1.pas",
+		"/D/Backup/porn/Games/JSK Studio 2013-02-18/JSK Studio/追いつめかた/New Text Document.txt",
+		"/D/Backup/porn/Games/JSK Studio 2013-02-18/JSK Studio/Imoutoto-fUnc-trans/Mods.txt",
+		"/C/Users/David/Dropbox/Projekte/Löve/1gam/2013-08/classes/texturemanager.lua",
+		"/C/Users/David/Dropbox/Uni/Computersysteme 1/Aufgabe 2.5.html",
+		"/C/Users/David/Dropbox/Uni/Computersysteme 1/Aufgabe 2.4.html",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens/class.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens/story_screens/hina_amagi.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens/story_screens/kazuna_satoshi.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens/story_screens/jack_drake.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens/story_screens/sanji.rpy!",
+		"/C/Users/David/Dropbox/Projekte/Löve/1gam/2013-08/main.lua",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/stats.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/policy.rpy",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/policy.rpy.edbkup",
+		"/D/Backup/porn/Games/Management/Ashford Academy-0.5000-all/Ashford Academy-all/game/screens/dormitory.rpy",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/calculation.class.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/defaultcalculation.class.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/modules/virtual_items.lua",
+		"/C/Spiele/World of Warcraft/Interface/addons/TopFit/changelog.txt",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/template.php",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/components/_search.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_local_cart/w21_vb_vf_local_cart.module",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_imports/collection.migrate.inc",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_imports/hotels.inc",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_imports/partners.inc",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/_mixins.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/_init.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/js/script.js",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/templates/node.tpl.php",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/components/_nodes.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_local_cart/js/w21_vb_vf_local_cart.js",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_imports/locations.inc",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/components/_cart.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/components/_blocks.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/components/_misc.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/templates/page.tpl.php",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/layouts/_responsive.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/templates/field--taxonomy-term-reference.tpl.php",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/bco.werk21system.de/html/sites/all/modules/custom/w21_vb_custom/plugins/checkedlist/plugin.js",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_checkedlist/w21_vb_checkedlist.module",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_checkedlist/w21_vb_checkedlist.info",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_custom/w21_vb_custom.module",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_search_form/js/w21_vb_vf_search_form.js",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/themes/venue_finder/sass/_normalize.scss",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/w21_msf_migrate/article.inc",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_imports/w21_vb_vf_imports.info",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/vf.werk21system.de/html/sites/all/modules/custom/w21_vb_vf_imports/w21_vb_vf_imports.migrate.inc",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/w21_msf_migrate/w21_msf_migrate.migrate.inc",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/w21_msf_migrate/w21_msf_migrate.info",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/w21_msf_migrate/collection.migrate.inc",
+		"/C/Users/David/Documents/ArcaniA - Gothic 4/gamesoundsettings.xml",
+		"/C/Users/David/Documents/ArcaniA - Gothic 4/gameplaysettings.xml",
+		"/C/Users/David/Documents/ArcaniA - Gothic 4/videosettings.xml",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/settings.php",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/w21_msf_banner_service/w21_msf_banner_service.module",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/w21_msf_banner_service/w21_msf_banner_service.info",
+		"/C/Users/David/Downloads/feature_msf_germany_faz_export-7.x-1.0-alpha1/feature_msf_germany_faz_export/feature_msf_germany_faz_export.views_default.inc",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/themes/msf_germany/templates/field/field.tpl.php.dist",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/bco.werk21system.de/html/sites/all/themes/visitberlin/sass/_base.scss",
+		"/C/Users/David/AppData/Local/Temp/a49c02cd-ff50-4a71-bfc6-c4a20a6efa83/srv/www/htdocs/msf2.werk21system.de/html/sites/germany/modules/custom/msf_germany_facts_frontend/msf_germany_facts_frontend.module",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/bco.werk21system.de/html/sites/all/themes/visitberlin/sass/pages.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/bco.werk21system.de/html/sites/all/themes/visitberlin/sass/_custom.scss",
+		"/C/Users/David/AppData/Local/Temp/1cdcb10c-fa35-46c7-8a44-5a4e621319da/srv/www/htdocs/bco.werk21system.de/html/sites/all/themes/visitberlin/sass/normalize.scss",
+		"/C/Spiele/World of Warcraft/Interface/addons/Broker_Garbage/core.lua"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\",
+			"D:\\Backup\\porn\\Games\\Management\\Ashford Academy-0.5000-all\\Ashford Academy-all\\game",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\Broker_Garbage",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\AuctionAI",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\AucitonAI",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\TopFit",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\wowUnit",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\ElvUI",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\AuctionAI",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\Auctional",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\TopFit",
+			"C:\\Users\\David\\Desktop\\te4-1.0.0\\engine",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\TopFit",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\TopFit",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\ArkInventory",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\Broker_Garbage",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\TopFit",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\",
+			"C:\\Spiele\\World of Warcraft\\Interface\\AddOns\\TopFit",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"currentl",
+			"maxDepth",
+			"esca",
+			"generatel",
+			"log:ins",
+			"power",
+			"while",
+			"AddHighscore",
+			"500",
+			"highsc",
+			"angle",
+			"defaultFont",
+			"hugeFont",
+			".load",
+			"particle",
+			"partic",
+			"game over",
+			"generat",
+			"generate",
+			"newgame",
+			"particle",
+			"par",
+			"durability",
+			"drill",
+			"2",
+			"persistent",
+			"player",
+			"playername",
+			"log",
+			"uiexported",
+			"messageMap",
+			"score",
+			"Tile",
+			"gameState",
+			"settile",
+			"subheadl",
+			"<box-teaser>[\\w\\W]*?</box-teaser>",
+			"<img>",
+			"<file>",
+			"<date>",
+			"<!\\[CDATA\\[[\\w\\W]*?\\]\\]>",
+			"<[^/>]*>",
+			"<\\w*>",
+			"<box-teaser>[\\w\\W]*?</box-teaser>",
+			"<box-teaser>",
+			"54545BA97CF949D8808A9D6883FC523A",
+			"<sidebar>[\\w\\W]*?</sidebar>",
+			"curricul",
+			"extra_other_description\":\"",
+			"extra",
+			"knock",
+			"braking",
+			"\"id\":",
+			"LibItemUpgrade",
+			"strtol",
+			"_lexicon_alphabar",
+			"'map'",
+			"listenseite",
+			"49",
+			"030",
+			"local ra",
+			"TopFit",
+			"TopDownSample",
+			"topDown",
+			"topDownTextures",
+			"TextureManager",
+			"onsho",
+			"onup",
+			"set",
+			"iconOnly",
+			"dropdown",
+			"UIDropDownMenu_S",
+			"setsele",
+			".(",
+			"speci",
+			"initia",
+			"InitializeHeaderActions",
+			"(.)_(\\d)",
+			"&not;",
+			"(.)_(\\d)",
+			"~",
+			"(.)_(\\d)",
+			"(.)_(%d)",
+			"(X)_(%d)",
+			"(.)_(%d)",
+			"deal",
+			"    $",
+			"hina_amagi_about_sexy_uniform",
+			"sunshine",
+			"looking for",
+			"cheerleader_club",
+			"sexy_uniform",
+			"cheer",
+			"sexy_uniform",
+			"cheerl",
+			"y 1-2",
+			"1-2",
+			"1 -2",
+			"1- 2",
+			"addvirtual",
+			":AddItem",
+			"AddItem",
+			"totalbo",
+			"page-view",
+			"page-sear",
+			"Cart List",
+			"alt",
+			"remove-l",
+			"Remove",
+			"rating",
+			"full-ca",
+			"pane-node",
+			"whitesp",
+			"white-sp",
+			"button",
+			"w21_vb_vf_local_cart_container_add",
+			"button",
+			".button",
+			"feature",
+			":after",
+			"position",
+			"sprite",
+			"sprite-",
+			"rows",
+			"panel-center",
+			"type",
+			"float: left;",
+			"float:left;"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"game.state",
+			"MailSage",
+			"LinearSample",
+			"IsometricSample",
+			"self.map",
+			"self.textures",
+			"TextureAtlas",
+			"$1<sub>$2</sub>",
+			"&#0305;",
+			"$1<sub>$2</sub>",
+			"&not;",
+			"$1<sub>$2</sub>",
+			"\\section",
+			"\\subsection",
+			"\\subsubsection",
+			"Maximum",
+			"[",
+			"expectFailureIn",
+			"Atom",
+			"ende",
+			"#vzbv_stage.lebensmittel #vzbv_person",
+			"animateElement",
+			"stat_type",
+			"stat type",
+			"$stat_type",
+			"entity_stat_type",
+			"findbuys",
+			"\"",
+			"set.calculationData.currentCapValues",
+			"set.calculationData.maxRestStat",
+			"set.calculationData.capHeuristics",
+			"set.calculationData.slotCounters",
+			"set.calculationData.bestCombination",
+			"CalculateBestInSlot(ns.emptySet, ",
+			"CalculateBestInSlot(set, ",
+			"ns.emptySet",
+			"IsOnehandedWeapon(emptySet, ",
+			"itemList",
+			"BAG_UPDATE_DELAYED"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Ideas",
+					"settings":
+					{
+						"buffer_size": 564,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "Ideas",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.lua",
+					"settings":
+					{
+						"buffer_size": 35888,
+						"regions":
+						{
+							"bookmarks":
+							{
+								"flags": 144,
+								"icon": "bookmark",
+								"regions":
+								[
+									[
+										28945,
+										28945
+									]
+								],
+								"scope": "bookmarks"
+							}
+						},
+						"selection":
+						[
+							[
+								24242,
+								24242
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 14035.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "classes/menu.lua",
+					"settings":
+					{
+						"buffer_size": 1489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								889,
+								889
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "classes/game.lua",
+					"settings":
+					{
+						"buffer_size": 3767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1764,
+								1764
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1254.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "classes/log.lua",
+					"settings":
+					{
+						"buffer_size": 947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								278,
+								278
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "classes/player.lua",
+					"settings":
+					{
+						"buffer_size": 3158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								536,
+								536
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 110.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "classes/tile.lua",
+					"settings":
+					{
+						"buffer_size": 1131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								861,
+								861
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "classes/map.lua",
+					"settings":
+					{
+						"buffer_size": 5751,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3802,
+								3802
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 0.5,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"php": "C:\\xampp\\php\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2545.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 206.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

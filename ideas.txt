@@ -1,0 +1,25 @@
+Ideas
+
+- level variations
+    - empty spaces
+- more "stuff", secrets, generated rooms or caves
+    - sandwich!
+    - tomb
+    - UFO
+    - pants? shirt? a loincloth?
+    - radioactive waste!
+    - dinosaur bones!
+    - broken pickaxes!
+    - mushrooms
+    - chests / boxes
+    - weird messages, maybe even helpful (might be used as a tutorial, as well)
+    - enchantment? enchantment!
+    x Big red button
+- online high scores
+- special abilities?
+    - whirlwind
+    - place dynamite
+- music, maybe?
+- change keybinds, maybe?
+
+levels for added depth (pun intended)
