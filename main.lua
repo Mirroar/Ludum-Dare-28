@@ -42,6 +42,22 @@ function lerpAngle(min, max, percentile)
     return angle(lerp(min, max, percentile))
 end
 
+-- randomly returns one of the numbered table's elements
+function ChooseOne(table)
+    if #table <= 0 then return nil end
+    return table[math.random(1, #table)]
+end
+
+-- counts the number of elements in a table, optionally filtered by a callback
+function Count(table, callback)
+    local count = 0
+    for k, v in pairs(table) do
+        if not callback or callback(k, v) then
+            count = count + 1
+        end
+    end
+    return count
+end
 
 
 
@@ -60,144 +76,148 @@ persistent = {
 highscores = {}
 sounds = {}
 
-local pointsMap = {
-    ['dirt++'] = 1,
-    ['dirt+++'] = 2,
-    ['skeleton'] = 10,
-    ['emerald'] = 50,
-    ['ducktape'] = 1,
-    ['helmet'] = 5,
-    ['ring'] = 20,
-    ['amulet'] = 60,
-    ['chain'] = 10,
-    ['cape'] = 20,
-    ['drill'] = 10,
-    ['fossil'] = 15,
-    ['tablet'] = 30,
-}
-
-local messageMap = {
-    ['skeleton'] = "Wow, a skeleton! Wonder how long he's been down here...",
-    ['emerald'] = "Shiny!",
-    ['ducktape'] = "Buried duck tape, seriously?!",
-    ['helmet'] = "This should help me see better.",
-    ['ring'] = "You do not simply dig a ring out of a mountain!",
-    ['amulet'] = "It fits snugly around my neck. Bring on the bling!",
-    ['chain'] = "I got nothing...",
-    ['cape'] = "A fine garment!",
-    ['drill'] = "Vrooooom!",
-    ['fossil'] = "Alright, prehistoric snails!",
-    ['tablet'] = "You see a finely crafted stone tablet. On it are two drarves. The dwarves are digging.",
-    [''] = "",
-    [''] = "",
-    [''] = "",
-    [''] = "",
-    [''] = "",
-}
-
-local achievementMap = {
-    {
-        tileType = 'dirt',
+-- general-purpose information about every type of tile in the game
+local tileData = {
+    -- basic tiles
+    ['dirt'] = {
+        points = 0,
+        messages = {},
         name = "Dirt",
         description = "Plain and simple.",
     },
-    {
-        tileType = 'dirt+',
+    ['dirt+'] = {
+        points = 0,
+        messages = {},
         name = "Gravel",
         description = "Not quite as easy as dirt, but just as useless.",
     },
-    {
-        tileType = 'dirt++',
+    ['dirt++'] = {
+        points = 1,
+        messages = {},
         name = "Loose stones",
         description = "They make it more difficult to dig through. Contains some value.",
     },
-    {
-        tileType = 'dirt+++',
+    ['dirt+++'] = {
+        points = 2,
+        messages = {},
         name = "Strong stone",
         description = "Very difficult to dig through. Try to avoid doing that.",
     },
-    {
-        tileType = 'exit_wall',
+
+    -- special level tiles
+    ['entry'] = {
+        points = 0,
+        messages = {},
+    },
+    ['exit'] = {
+        points = 0,
+        messages = {},
+    },
+    ['exit_wall'] = {
+        points = 0,
+        messages = {},
         name = "A hole",
         description = "Leads deeper underground.",
     },
-    {
-        tileType = 'skeleton',
+
+    -- valuables
+    ['skeleton'] = {
+        points = 10,
+        messages = {"Wow, a skeleton! Wonder how long he's been down here..."},
         name = "Skeleton",
         description = "The remains of a human. Some scientists might be interested.",
     },
-    {
-        tileType = 'fossil',
+    ['fossil'] = {
+        points = 15,
+        messages = {"Alright, prehistoric snails!"},
         name = "Fossil",
         description = "An ancient organism, encrusted in stone.",
     },
-    {
-        tileType = 'tablet',
+    ['tablet'] = {
+        points = 30,
+        messages = {"You see a finely crafted stone tablet. On it are two drarves. The dwarves are digging."},
         name = "Stone Tablet",
         description = "Fine craftsmanship. Considering the low-tech tools available at the time.",
     },
-    {
-        tileType = 'emerald',
+    ['emerald'] = {
+        points = 50,
+        messages = {"Shiny!"},
         name = "Gem",
         description = "Precious and fragile, needs special handling when dog out.",
     },
-    {
-        tileType = 'ducktape',
+
+    -- powerups
+    ['ducktape'] = {
+        points = 1,
+        messages = {"Buried duck tape, seriously?!"},
         name = "Duck Tape",
         description = "Referred to as \"Duct Tape\" by our ancient forefathers. Rumored to have mystical repairing properties. Can be used multiple times.",
     },
-    {
-        tileType = 'helmet',
+    ['helmet'] = {
+        points = 5,
+        messages = {"This should help me see better."},
         name = "Mining Helmet",
         description = "Even the batteries are still intact. Very useful!",
     },
-    {
-        tileType = 'drill',
-        name = "Battery-Powered Drill",
-        description = "Superpowers! For a short while at least, and you don't have to use your pick.",
-    },
-    {
-        tileType = 'ring',
+    ['ring'] = {
+        points = 20,
+        messages = {"You do not simply dig a ring out of a mountain!"},
         name = "One Ring",
         description = "Because nobody really needs two rings. Increases your power. Can be used multiple times.",
     },
-    {
-        tileType = 'amulet',
+    ['amulet'] = {
+        points = 60,
+        messages = {"It fits snugly around my neck. Bring on the bling!"},
         name = "Golden Amulet",
         description = "Magical or not, this is bound to be valuable! Helps you treat your pick better.",
     },
-    {
-        tileType = 'chain',
+    ['chain'] = {
+        points = 10,
+        messages = {"I got nothing...", "It's too long for my neck? Still shiny, still taking it!"},
         name = "Silver Chain",
         description = "A bit too big to carry comfortably. Helps you treat your pick better.",
     },
-    {
-        tileType = 'cape',
+    ['cape'] = {
+        points = 20,
+        messages = {"A fine garment!"},
         name = "Blue Cape",
         description = "Look like a superhero! Increases your power.",
     },
-    {
-        tileType = "tikimask",
+    ['drill'] = {
+        points = 10,
+        messages = {"Vrooooom!", "Hey dirt, here comes your spiral doom!"},
+        name = "Battery-Powered Drill",
+        description = "Superpowers! For a short while at least, and you don't have to use your pick.",
+    },
+
+    -- game enders / goal type stuff
+    ["tikimask"] = {
+        points = 0,
+        messages = {},
         name = "Mask of Zuul",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
     },
-    {
-        tileType = "goldidol",
+    ["goldidol"] = {
+        points = 0,
+        messages = {},
         name = "Idol of Garana",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
     },
-    {
-        tileType = "goldscepter",
+    ["goldscepter"] = {
+        points = 0,
+        messages = {},
         name = "Scepter of Dha'Li",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
     },
-    {
-        tileType = "holygrail",
+    ["holygrail"] = {
+        points = 0,
+        messages = {},
         name = "Holy Grail",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
     },
-    {
-        tileType = "fountain",
+    ["fountain"] = {
+        points = 0,
+        messages = {},
         name = "Fountain of Youth",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
     },
@@ -534,9 +554,9 @@ function love.keypressed(key, isrepeat)
                 else
                     PlaySound("destroy")
                     while destroyed do
-                        if pointsMap[targetType] or messageMap[targetType] then
-                            game.points = game.points + (pointsMap[targetType] or 0)
-                            log:insert(messageMap[targetType], pointsMap[targetType], targetType)
+                        if tileData[targetType].points or tileData[targetType].messages then
+                            game.points = game.points + (tileData[targetType].points or 0)
+                            log:insert(ChooseOne(tileData[targetType].messages), tileData[targetType].points, targetType)
                         end
                         if not persistent.discoveredTiles[targetType] then
                             persistent.discoveredTiles[targetType] = {
@@ -703,8 +723,8 @@ function love.update(delta)
                     highscorePositionTarget = #highscores * 20
                 end
             elseif game.state == "achievements" then
-                if highscorePositionTarget > #achievementMap * 50 - love.graphics.getHeight() + 100 then
-                    highscorePositionTarget = #achievementMap * 50 - love.graphics.getHeight() + 100
+                if highscorePositionTarget > Count(tileData, function(k, v) return v.description end) * 50 - love.graphics.getHeight() + 100 then
+                    highscorePositionTarget = Count(tileData, function(k, v) return v.description end) * 50 - love.graphics.getHeight() + 100
                 end
             end
         end
@@ -877,26 +897,43 @@ function love.draw()
             love.graphics.printf(i..". "..highscores[i].name.." - "..highscores[i].score, 0, 200 + i * 20 - highscorePosition, love.graphics.getWidth(), "center")
         end
     elseif game.state == "achievements" then
-        for i, item in ipairs(achievementMap) do
-            local tileType = "dirt"
-            local name = "???"
-            local text = ""
-            local count = ""
-            if persistent.discoveredTiles[item.tileType] then
-                tileType = item.tileType
-                name = item.name
-                text = item.description
-                count = persistent.discoveredTiles[tileType].count
+        -- sort by num found or something
+        local achievementSort = {} -- TODO: init once when achievement screen is accessed
+        for tileType, _ in pairs(tileData) do
+            table.insert(achievementSort, tileType)
+        end
+        table.sort(achievementSort, function(a, b)
+            local aFound = persistent.discoveredTiles[a] and persistent.discoveredTiles[a].count or 0
+            local bFound = persistent.discoveredTiles[b] and persistent.discoveredTiles[b].count or 0
+
+            return aFound > bFound
+        end)
+
+        local i = 0
+        for _, tileType in ipairs(achievementSort) do
+            local item = tileData[tileType]
+            if item.description then
+                i = i + 1
+                local showType = "dirt"
+                local name = "???"
+                local text = ""
+                local count = ""
+                if persistent.discoveredTiles[tileType] then
+                    showType = tileType
+                    name = item.name
+                    text = item.description
+                    count = persistent.discoveredTiles[tileType].count
+                end
+                textures:DrawSprite(showType, 50, i * 50 - highscorePosition, 0, 2)
+                love.graphics.setColor(0, 0, 0, 255)
+                love.graphics.setColorMode("modulate")
+                love.graphics.printf(count, 51, i * 50 + 1 - highscorePosition, 30, "right")
+                love.graphics.setColor(255, 255, 255, 255)
+                love.graphics.setColorMode("replace")
+                love.graphics.printf(count, 50, i * 50 - highscorePosition, 30, "right")
+                love.graphics.printf(name, 90, i * 50 - highscorePosition, love.graphics.getWidth() - 90 - 50, "left")
+                love.graphics.printf(text, 90, i * 50 + 16 - highscorePosition, love.graphics.getWidth() - 90 - 50, "left")
             end
-            textures:DrawSprite(tileType, 50, i * 50 - highscorePosition, 0, 2)
-            love.graphics.setColor(0, 0, 0, 255)
-            love.graphics.setColorMode("modulate")
-            love.graphics.printf(count, 51, i * 50 + 1 - highscorePosition, 30, "right")
-            love.graphics.setColor(255, 255, 255, 255)
-            love.graphics.setColorMode("replace")
-            love.graphics.printf(count, 50, i * 50 - highscorePosition, 30, "right")
-            love.graphics.printf(name, 90, i * 50 - highscorePosition, love.graphics.getWidth() - 90 - 50, "left")
-            love.graphics.printf(text, 90, i * 50 + 16 - highscorePosition, love.graphics.getWidth() - 90 - 50, "left")
         end
     end
 end
