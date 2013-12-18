@@ -13,22 +13,28 @@ tileData = {
         messages = {},
         name = "Gravel",
         description = "Not quite as easy as dirt, but just as useless.",
+        hp = 2,
+        transform = "dirt",
     },
     ['dirt++'] = {
         points = 1,
         messages = {},
         name = "Loose stones",
         description = "They make it more difficult to dig through. Contains some value.",
+        hp = 3,
+        transform = "dirt+",
     },
     ['dirt+++'] = {
         points = 2,
         messages = {},
         name = "Strong stone",
         description = "Very difficult to dig through. Try to avoid doing that.",
+        hp = 4,
+        transform = "dirt++",
     },
 
     -- special level tiles
-    ['entry'] = {
+    ['entrance'] = {
         points = 0,
         messages = {},
     },
@@ -40,7 +46,8 @@ tileData = {
         points = 0,
         messages = {},
         name = "A hole",
-        description = "Leads deeper underground.",
+        description = "If you're going deeper underground, this is where it's happening.",
+        transform = "exit",
     },
 
     -- valuables
@@ -49,6 +56,7 @@ tileData = {
         messages = {"Wow, a skeleton! Wonder how long he's been down here..."},
         name = "Skeleton",
         description = "The remains of a human. Some scientists might be interested.",
+        hp = 2,
     },
     ['fossil'] = {
         points = 15,
@@ -67,6 +75,7 @@ tileData = {
         messages = {"Shiny!"},
         name = "Gem",
         description = "Precious and fragile, needs special handling when dog out.",
+        hp = 5,
     },
 
     -- powerups
@@ -119,29 +128,34 @@ tileData = {
         messages = {},
         name = "Mask of Zuul",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
+        hp = 15,
     },
     ["goldidol"] = {
         points = 0,
         messages = {},
         name = "Idol of Garana",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
+        hp = 15,
     },
     ["goldscepter"] = {
         points = 0,
         messages = {},
         name = "Scepter of Dha'Li",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
+        hp = 15,
     },
     ["holygrail"] = {
         points = 0,
         messages = {},
         name = "Holy Grail",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
+        hp = 15,
     },
     ["fountain"] = {
         points = 0,
         messages = {},
         name = "Fountain of Youth",
         description = "Buried since time immemorial, this artifact can now be seen in a musem thanks to you!",
+        hp = 15,
     },
 }

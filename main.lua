@@ -407,7 +407,7 @@ function love.keypressed(key, isrepeat)
                 else
                     PlaySound("destroy")
                     while destroyed do
-                        if tileData[targetType].points or tileData[targetType].messages then
+                        if (tileData[targetType].points and tileData[targetType].points > 0) or (tileData[targetType].messages and #tileData[targetType].messages > 0) then
                             game.points = game.points + (tileData[targetType].points or 0)
                             log:insert(ChooseOne(tileData[targetType].messages), tileData[targetType].points, targetType)
                         end

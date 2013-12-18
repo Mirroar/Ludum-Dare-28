@@ -1,23 +1,3 @@
-local durabilityMap = {
-    ['dirt+'] = 2,
-    ['dirt++'] = 3,
-    ['dirt+++'] = 4,
-    ['skeleton'] = 2,
-    ['emerald'] = 5,
-    ['tikimask'] = 15,
-    ['goldidol'] = 15,
-    ['goldscepter'] = 15,
-    ['holygrail'] = 15,
-    ['fountain'] = 15,
-}
-
-local transformationMap = {
-    ['dirt+'] = 'dirt',
-    ['dirt++'] = 'dirt+',
-    ['dirt+++'] = 'dirt++',
-    ['exit_wall'] = 'exit',
-}
-
 Tile = class()
 
 function Tile:construct(tileType)
@@ -28,7 +8,9 @@ end
 function Tile:SetType(tileType)
     self.tileType = tileType
     self.hp = 1
-    self.durability = durabilityMap[self.tileType] or 1
+    if tileType then
+        self.hp = tileData[tileType].hp or 1
+    end
 end
 
 function Tile:GetType()
@@ -37,10 +19,10 @@ end
 
 function Tile:Damage(damage)
     damage = damage or 1
-    self.hp = self.hp - (damage / self.durability)
+    self.hp = self.hp - damage
     if self.hp <= 0 then
-        local rest = -self.hp * self.durability
-        self:SetType(transformationMap[self:GetType()])
+        local rest = -self.hp
+        self:SetType(tileData[self:GetType()].transform)
         return rest
     end
 end

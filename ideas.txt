@@ -1,8 +1,8 @@
 Ideas
 
-- level variations
-    - empty spaces
+- more level variations
 - more "stuff", secrets, generated rooms or caves
+    - special rooms (with chests and stuff in them)
     - sandwich!
     - tomb
     - UFO
@@ -12,14 +12,13 @@ Ideas
     - broken pickaxes!
     - mushrooms
     - chests / boxes
-    - weird messages, maybe even helpful (might be used as a tutorial, as well)
+    - weird messages in the ground, maybe even helpful (might be used as a tutorial, as well)
     - enchantment? enchantment!
     x Big red button
+    - water/lava hazard
 - online high scores
 - special abilities?
     - whirlwind
-    - place dynamite
-- music, maybe?
-- change keybinds, maybe?
-
-levels for added depth (pun intended)
+    - place dynamite / bombs
+- music
+- change keybinds
