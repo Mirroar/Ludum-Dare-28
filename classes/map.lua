@@ -31,7 +31,7 @@ end
 function Map:_SetSizeRecursive(table, dimension, size, ...)
     for i = 1, size do
         if dimension == 1 then
-            table[i] = Tile()
+            table[i] = CreateTile()
         else
             table[i] = {}
             self:_SetSizeRecursive(table[i], dimension - 1, ...)
@@ -122,14 +122,14 @@ end
 function Map:_DrawRecursive(table, dimension, currentX, currentY, tileX)
     for i = 1, #table do
         if dimension == self.dimensions then
-            local tileType = table[i]:GetType()
+            local tileType = table[i].tileType
             if tileType then
                 -- tile brightness depends on distance to player
                 local dx = player:GetX() * 16 - currentX - 16
                 local dy = player:GetY() * 16 - currentY - 16
                 local distance = math.sqrt(dx * dx + dy * dy)
                 local brightness = (1 - (distance / self.randomRadius))
-                local tileBrightness = table[i]:GetBrightness()
+                local tileBrightness = table[i].brightness
 
                 if game.state ~= 'ingame' then
                     brightness = brightness / 3
@@ -137,7 +137,7 @@ function Map:_DrawRecursive(table, dimension, currentX, currentY, tileX)
                 end
 
                 if brightness > 0 or tileBrightness > 0 then
-                    table[i]:SetBrightness(brightness)
+                    SetTileBrightness(table[i], brightness)
                     love.graphics.setColor(math.max(255 * brightness, 16 * tileBrightness), math.max(255 * brightness, 16 * tileBrightness), math.max(255 * brightness, 96 * tileBrightness), 255)
                     if tileType == game.goal.tileType then
                         self.tileset:DrawSprite("dirt2", currentX, currentY)
@@ -146,16 +146,16 @@ function Map:_DrawRecursive(table, dimension, currentX, currentY, tileX)
 
                     if not self:isTransparent(tileType) then
                         local tileY = i
-                        if tileY > 1 and self:isTransparent(self:GetTile(tileX, tileY - 1):GetType()) then
+                        if tileY > 1 and self:isTransparent(self:GetTile(tileX, tileY - 1).tileType) then
                             self.tileset:DrawSprite("border_down", currentX, currentY - 16)
                         end
-                        if tileY < self:GetHeight() and self:isTransparent(self:GetTile(tileX, tileY + 1):GetType()) then
+                        if tileY < self:GetHeight() and self:isTransparent(self:GetTile(tileX, tileY + 1).tileType) then
                             self.tileset:DrawSprite("border_up", currentX, currentY + 16)
                         end
-                        if tileX > 1 and self:isTransparent(self:GetTile(tileX - 1, tileY):GetType()) then
+                        if tileX > 1 and self:isTransparent(self:GetTile(tileX - 1, tileY).tileType) then
                             self.tileset:DrawSprite("border_left", currentX - 16, currentY)
                         end
-                        if tileX < self:GetWidth() and self:isTransparent(self:GetTile(tileX + 1, tileY):GetType()) then
+                        if tileX < self:GetWidth() and self:isTransparent(self:GetTile(tileX + 1, tileY).tileType) then
                             self.tileset:DrawSprite("border_right", currentX + 16, currentY)
                         end
                     end

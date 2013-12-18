@@ -227,73 +227,73 @@ local function GenerateLevel()
 
     for x = 1, map:GetWidth() do
         for y = 1, map:GetHeight() do
-            map:GetTile(x, y):SetType('dirt')
+            SetTileType(map:GetTile(x, y), 'dirt')
             if (math.random(1, 20 + game.currentLevel * 5)) > 30 then
-                map:GetTile(x, y):SetType('dirt3')
+                SetTileType(map:GetTile(x, y), 'dirt3')
             end
             if (math.random(1, 20 + game.currentLevel * 5)) > 60 then
-                map:GetTile(x, y):SetType('dirt2')
+                SetTileType(map:GetTile(x, y), 'dirt2')
             end
 
             if math.random(100 + game.currentLevel * 5) > 80 then
-                map:GetTile(x, y):SetType('dirt+')
+                SetTileType(map:GetTile(x, y), 'dirt+')
             end
             if math.random(100 + game.currentLevel * 5) > 95 then
-                map:GetTile(x, y):SetType('dirt++')
+                SetTileType(map:GetTile(x, y), 'dirt++')
             end
             if math.random(100 + game.currentLevel * 5) > 110 then
-                map:GetTile(x, y):SetType('dirt+++')
+                SetTileType(map:GetTile(x, y), 'dirt+++')
             end
 
             -- valuable stuff
             if math.random(1000 + game.currentLevel * 10) > 997 then
-                map:GetTile(x, y):SetType('skeleton')
+                SetTileType(map:GetTile(x, y), 'skeleton')
             end
             if math.random(1000 + game.currentLevel * 10) > 1005 then
-                map:GetTile(x, y):SetType('fossil')
+                SetTileType(map:GetTile(x, y), 'fossil')
             end
             if math.random(1000 + game.currentLevel * 10) > 1020 then
-                map:GetTile(x, y):SetType('tablet')
+                SetTileType(map:GetTile(x, y), 'tablet')
             end
             if math.random(10000 + game.currentLevel * 10) > 9985 then
-                map:GetTile(x, y):SetType('emerald')
+                SetTileType(map:GetTile(x, y), 'emerald')
             end
 
             -- powerups
             if math.random(10000) > 9975 then
-                map:GetTile(x, y):SetType('ducktape')
+                SetTileType(map:GetTile(x, y), 'ducktape')
             end
             if math.random(10000 + game.currentLevel * 10) > 9980 then
-                map:GetTile(x, y):SetType('ring')
+                SetTileType(map:GetTile(x, y), 'ring')
             end
             if math.random(10000) > 9980 and game.currentLevel >= 5 then
-                map:GetTile(x, y):SetType('amulet')
+                SetTileType(map:GetTile(x, y), 'amulet')
             end
             if math.random(10000) > 9955 and game.currentLevel >= 2 then
-                map:GetTile(x, y):SetType('chain')
+                SetTileType(map:GetTile(x, y), 'chain')
             end
             if math.random(10000) > 9980 and game.currentLevel >= 7 then
-                map:GetTile(x, y):SetType('cape')
+                SetTileType(map:GetTile(x, y), 'cape')
             end
             if math.random(10000) > 9990 and game.currentLevel >= 4 then
-                map:GetTile(x, y):SetType('drill')
+                SetTileType(map:GetTile(x, y), 'drill')
             end
         end
     end
     -- place helmets in level 3, 5 and 7
     if (game.currentLevel == 3 or game.currentLevel == 5 or game.currentLevel == 7) then
         for i = 1, math.ceil(game.currentLevel / 2) do
-            map:GetTile(math.random(1, map:GetWidth()), math.random(1, map:GetHeight())):SetType("helmet")
+            SetTileType(map:GetTile(math.random(1, map:GetWidth()), math.random(1, map:GetHeight())), "helmet")
         end
     end
 
     -- last but not least, place an exit tile randomly in one of the corners
-    map:GetTile(
+    SetTileType(map:GetTile(
         math.random(0, 1) * (map:GetWidth() - 10) + math.random(3, 7),
         math.random(0, 1) * (map:GetWidth() - 10) + math.random(3, 7)
-    ):SetType('exit_wall')
+    ), 'exit_wall')
     player = Player(math.floor(map:GetWidth() / 2), math.floor(map:GetHeight() / 2))
-    map:GetTile(player:GetX(), player:GetY()):SetType("entrance")
+    SetTileType(map:GetTile(player:GetX(), player:GetY()), "entrance")
 
     -- allow game controller to alter the level (to place goal tiles, etc)
     game:AlterMap()
@@ -377,7 +377,7 @@ function love.keypressed(key, isrepeat)
             py = targetY * 16 - 8
             player:SetFacing('right')
             dir = key
-        elseif key == 'return' and map:GetTile(player:GetX(), player:GetY()):GetType() == 'exit' then
+        elseif key == 'return' and map:GetTile(player:GetX(), player:GetY()).tileType == 'exit' then
             game.currentLevel = game.currentLevel + 1
             game.maxDepth = game.currentLevel
             log:insert()
@@ -390,7 +390,7 @@ function love.keypressed(key, isrepeat)
         end
 
         if targetX and targetY then
-            local targetType = map:GetTile(targetX, targetY):GetType()
+            local targetType = map:GetTile(targetX, targetY).tileType
             if not map:isTransparent(targetType) then
                 -- solid tile
                 for i = 1, 10 do
@@ -400,7 +400,7 @@ function love.keypressed(key, isrepeat)
                 if game.drillDurability > 0 then
                     power = 10
                 end
-                local destroyed = map:GetTile(targetX, targetY):Damage(power)
+                local destroyed = DamageTile(map:GetTile(targetX, targetY), power)
 
                 if not destroyed then
                     PlaySound("hit")
@@ -480,16 +480,16 @@ function love.keypressed(key, isrepeat)
                             SavePersistent()
                         end
 
-                        if not map:isTransparent(map:GetTile(targetX, targetY):GetType()) then
-                            targetType = map:GetTile(targetX, targetY):GetType()
-                            destroyed = map:GetTile(targetX, targetY):Damage(destroyed)
+                        if not map:isTransparent(map:GetTile(targetX, targetY).tileType) then
+                            targetType = map:GetTile(targetX, targetY).tileType
+                            destroyed = DamageTile(map:GetTile(targetX, targetY), destroyed)
                         else
                             destroyed = false
                         end
                     end
                 end
 
-                if map:isTransparent(map:GetTile(targetX, targetY):GetType()) then
+                if map:isTransparent(map:GetTile(targetX, targetY).tileType) then
                     -- tile is now empty, move into it
                     player:SetPosition(targetX, targetY)
                     player:SetAnimation("move_"..dir)
@@ -666,7 +666,7 @@ function love.draw()
         love.graphics.printf("Goal: Find "..game.goal.name.." in the depths of the cave", 10, 10, love.graphics.getWidth() - 20, "right")
 
         -- level exit notice
-        if (map:GetTile(player:GetX(), player:GetY()):GetType() == 'exit') then
+        if (map:GetTile(player:GetX(), player:GetY()).tileType == 'exit') then
             love.graphics.printf("There is a hole here. Press <Enter> to go to the next level", 0, 100, love.graphics.getWidth(), "center")
         end
     end

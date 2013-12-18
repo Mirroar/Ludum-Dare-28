@@ -32,6 +32,14 @@ tileData = {
         hp = 4,
         transform = "dirt++",
     },
+    ['dirt2'] = {
+        points = 0,
+        messages = {},
+    },
+    ['dirt3'] = {
+        points = 0,
+        messages = {},
+    },
 
     -- special level tiles
     ['entrance'] = {
