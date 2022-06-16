@@ -153,13 +153,13 @@ end
 function PlaySound(id)
     if sounds[id] then
         local sound = sounds[id][math.random(1, #sounds[id])]
-        love.audio.rewind(sound)
+        love.audio.stop(sound)
         love.audio.play(sound)
     end
 end
 
 local function LoadHighscores()
-    if love.filesystem.isFile("highscores.lua") then
+    if love.filesystem.getInfo("highscores.lua", 'file') then
         highscores = Tserial.unpack(love.filesystem.read("highscores.lua"), true)
     end
 end
@@ -169,7 +169,7 @@ local function SaveHighscores()
 end
 
 local function LoadPersistent()
-    if love.filesystem.isFile("persistent.lua") then
+    if love.filesystem.getInfo("persistent.lua", 'file') then
         persistentTemp = Tserial.unpack(love.filesystem.read("persistent.lua"), true)
         if persistentTemp then
             persistent = persistentTemp
@@ -592,8 +592,9 @@ function love.update(delta)
 end
 
 function love.draw()
-    love.graphics.setBackgroundColor(0, 0, 0)
-    love.graphics.clear()
+    love.graphics.setBackgroundColor(0, 0, 0, 0)
+    --love.graphics.setBlendMode('screen', 'alphamultiply')
+    love.graphics.clear(0, 0, 0, 1, true, true)
 
     -- draw map and player
     love.graphics.push()
@@ -617,11 +618,11 @@ function love.draw()
     --end
     love.graphics.translate(game.xOffset, game.yOffset)
 
-    love.graphics.setColorMode('modulate')
+    --love.graphics.setBlendMode('replace', 'alphamultiply')
     map:draw()
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(1, 1, 1, 1)
     if game.state ~= "ingame" then
-        love.graphics.setColor(128, 128, 128, 255)
+        love.graphics.setColor(0.5, 0.5, 0.5, 1)
     end
     player:draw()
     particles:draw()
@@ -629,7 +630,7 @@ function love.draw()
 
     if game.state == 'gameover' then
         love.graphics.push()
-        love.graphics.setColor(255, 255, 255, 255)
+        love.graphics.setColor(1, 1, 1, 1)
         love.graphics.printf("GAME OVER!", 0, 100, love.graphics.getWidth(), "center")
         love.graphics.printf("Total Score: "..game:calculateScore(), 0, 120, love.graphics.getWidth(), "center")
         love.graphics.printf("Press <Space> to restart or <Enter> to go to the menu", 0, 150, love.graphics.getWidth(), "center")
@@ -637,9 +638,9 @@ function love.draw()
         love.graphics.printf("Highscores:", 0, 200, love.graphics.getWidth(), "center")
         for i = 1, math.min(10, #highscores) do
             if highscores[i].name == persistent.playerName and highscores[i].score == game:calculateScore() then
-                love.graphics.setColor(128, 255, 255, 255)
+                love.graphics.setColor(0.5, 1, 1, 1)
             else
-                love.graphics.setColor(255, 255, 255, 255)
+                love.graphics.setColor(1, 1, 1, 1)
             end
             love.graphics.printf(i..". "..highscores[i].name.." - "..highscores[i].score, 0, 200 + i * 20, love.graphics.getWidth(), "center")
         end
@@ -649,16 +650,16 @@ function love.draw()
 
     if game.state == 'ingame' then
         -- draw durability meter
-        love.graphics.setColor(255, 255, 255)
+        love.graphics.setColor(1, 1, 1)
         love.graphics.print("Durability: ", 10, 10)
-        love.graphics.setColor(255, math.min(255, 255 * game.durability / 100), math.min(255, 255 * game.durability / 100))
+        love.graphics.setColor(1, math.min(1, game.durability / 100), math.min(1, game.durability / 100))
         local width = love.graphics.getFont():getWidth("Durability: ")
         love.graphics.rectangle("fill", 10 + width, 10, game.durability, 12)
-        love.graphics.setColor(128, 128, 255)
+        love.graphics.setColor(0.5, 0.5, 1)
         love.graphics.rectangle("fill", 10 + game.durability + width, 10, game.drillDurability, 12)
 
         -- stats
-        love.graphics.setColor(255, 255, 255, 255)
+        love.graphics.setColor(1, 1, 1, 1)
         love.graphics.print("Steps taken: "..game.steps, 10, 30)
         love.graphics.print("Current level: "..game.maxDepth, 10, 50)
         love.graphics.print("Valuable Stuff: "..game.points, 10, 70)
@@ -679,12 +680,12 @@ function love.draw()
         love.graphics.pop()
     end
 
-    love.graphics.setColor(255, 255, 255, 255)
+    love.graphics.setColor(1, 1, 1, 1)
     if game.state == "menu" or game.state == "changename" then
         love.graphics.setNewFont(64)
-        love.graphics.setColor(0, 0, 0, 255)
+        love.graphics.setColor(0, 0, 0, 1)
         love.graphics.printf("Dare to Dig!", 5, 5 + 100, love.graphics.getWidth(), "center")
-        love.graphics.setColor(255, 255, 255, 255)
+        love.graphics.setColor(1, 1, 1, 1)
         love.graphics.printf("Dare to Dig!", 0, 100, love.graphics.getWidth(), "center")
         love.graphics.setNewFont(12)
     end
@@ -696,7 +697,7 @@ function love.draw()
         love.graphics.pop()
     elseif game.state == "win" then
         -- draw goal item
-        love.graphics.setColor(255, 255, 255, 255 / 20 * goalZoom)
+        love.graphics.setColor(1, 1, 1, goalZoom / 20)
         for i = 1, 10 do
             local angle = (i * math.pi/5 + goalZoom - timer / 2) % (math.pi * 2)
             love.graphics.arc(
@@ -708,35 +709,35 @@ function love.draw()
                 angle + math.pi/100 * goalZoom
             )
         end
-        love.graphics.setColor(255, 255, 255, 255)
+        love.graphics.setColor(1, 1, 1, 1)
         textures:DrawSprite(game.goal.tileType, goalX, goalY, 0, goalZoom)
 
         if timer > 5 then
             local alpha = math.min(timer - 5, 2) / 2
             love.graphics.setNewFont(32)
-            love.graphics.setColor(0, 0, 0, 255 * alpha)
+            love.graphics.setColor(0, 0, 0, alpha)
             love.graphics.printf("Congratulations!", 3, 3+love.graphics.getHeight() / 2 + 10 * 10, love.graphics.getWidth(), "center")
-            love.graphics.setColor(255, 255, 255, 255 * alpha)
+            love.graphics.setColor(1, 1, 1, alpha)
             love.graphics.printf("Congratulations!", 0, love.graphics.getHeight() / 2 + 10 * 10, love.graphics.getWidth(), "center")
             love.graphics.setNewFont(12)
         end
         if timer > 7 then
             local alpha = math.min(timer - 7, 1)
             love.graphics.setNewFont(24)
-            love.graphics.setColor(0, 0, 0, 255 * alpha)
+            love.graphics.setColor(0, 0, 0, alpha)
             love.graphics.printf("You have found "..game.goal.name.."! Your deeds shall always be remembered!", 2, 2+love.graphics.getHeight() / 2 + 10 * 10 + 40, love.graphics.getWidth(), "center")
-            love.graphics.setColor(255, 255, 255, 255 * alpha)
+            love.graphics.setColor(1, 1, 1, alpha)
             love.graphics.printf("You have found "..game.goal.name.."! Your deeds shall always be remembered!", 0, love.graphics.getHeight() / 2 + 10 * 10 + 40, love.graphics.getWidth(), "center")
 
-            love.graphics.setColor(0, 0, 0, 255 * alpha)
+            love.graphics.setColor(0, 0, 0, alpha)
             love.graphics.printf("Final Score: "..game:calculateScore(), 2, 2+love.graphics.getHeight() / 2 - 10 * 10 - 40, love.graphics.getWidth(), "center")
-            love.graphics.setColor(255, 255, 255, 255 * alpha)
+            love.graphics.setColor(1, 1, 1, alpha)
             love.graphics.printf("Final Score: "..game:calculateScore(), 0, love.graphics.getHeight() / 2 - 10 * 10 - 40, love.graphics.getWidth(), "center")
 
             love.graphics.setNewFont(16)
-            love.graphics.setColor(0, 0, 0, 255 * alpha)
+            love.graphics.setColor(0, 0, 0, alpha)
             love.graphics.printf("Press <Enter> to return to menu", 2, 2+love.graphics.getHeight() / 2 - 10 * 10 - 10, love.graphics.getWidth(), "center")
-            love.graphics.setColor(255, 255, 255, 255 * alpha)
+            love.graphics.setColor(1, 1, 1, alpha)
             love.graphics.printf("Press <Enter> to return to menu", 0, love.graphics.getHeight() / 2 - 10 * 10 - 10, love.graphics.getWidth(), "center")
             love.graphics.setNewFont(12)
         end
@@ -781,11 +782,11 @@ function love.draw()
                     count = persistent.discoveredTiles[tileType].count
                 end
                 textures:DrawSprite(showType, 50, i * 50 - highscorePosition, 0, 2)
-                love.graphics.setColor(0, 0, 0, 255)
-                love.graphics.setColorMode("modulate")
+                love.graphics.setColor(0, 0, 0, 1)
+                --love.graphics.setBlendMode('multiply', 'premultiplied')
                 love.graphics.printf(count, 51, i * 50 + 1 - highscorePosition, 30, "right")
-                love.graphics.setColor(255, 255, 255, 255)
-                love.graphics.setColorMode("replace")
+                love.graphics.setColor(1, 1, 1, 1)
+                --love.graphics.setBlendMode('replace', 'alphamultiply')
                 love.graphics.printf(count, 50, i * 50 - highscorePosition, 30, "right")
                 love.graphics.printf(name, 90, i * 50 - highscorePosition, love.graphics.getWidth() - 90 - 50, "left")
                 love.graphics.printf(text, 90, i * 50 + 16 - highscorePosition, love.graphics.getWidth() - 90 - 50, "left")

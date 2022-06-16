@@ -75,5 +75,5 @@ function TextureAtlas:DrawSprite(identifier, x, y, rotation, scale)
     self.AssertArgumentType(x, "number")
     self.AssertArgumentType(y, "number")
 
-    love.graphics.drawq(self:GetBaseFile(), spriteObject.quad, math.floor(x), math.floor(y), rotation / 180 * math.pi, scale, scale)
+    love.graphics.draw(self:GetBaseFile(), spriteObject.quad, math.floor(x), math.floor(y), rotation / 180 * math.pi, scale, scale)
 end

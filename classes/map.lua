@@ -138,7 +138,7 @@ function Map:_DrawRecursive(table, dimension, currentX, currentY, tileX)
 
                 if brightness > 0 or tileBrightness > 0 then
                     SetTileBrightness(table[i], brightness)
-                    love.graphics.setColor(math.max(255 * brightness, 16 * tileBrightness), math.max(255 * brightness, 16 * tileBrightness), math.max(255 * brightness, 96 * tileBrightness), 255)
+                    love.graphics.setColor(math.max(brightness, tileBrightness / 16), math.max(brightness, tileBrightness / 16), math.max(brightness, 3 * tileBrightness / 8), 1)
                     if tileType == game.goal.tileType then
                         self.tileset:DrawSprite("dirt2", currentX, currentY)
                     end

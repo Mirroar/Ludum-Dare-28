@@ -45,7 +45,7 @@ end
 
 function Particle:draw()
     for _, particle in pairs(self.particles) do
-        love.graphics.setColor(255, 255, 255, particle.alpha)
+        love.graphics.setColor(1, 1, 1, particle.alpha / 255)
         --love.graphics.point(particle.x, particle.y - particle.z)
         textures:DrawSprite(particle.texture, particle.x, particle.y - particle.z)
     end
